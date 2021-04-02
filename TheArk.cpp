@@ -147,3 +147,11 @@ void TheArk::snap() {
         os_snap << s->getState() << " ";
     os_snap << std::endl;
 }
+
+Population *TheArk::getPopulation() const {
+    return population;
+}
+
+Resources *TheArk::getResources() const {
+    return resources;
+}

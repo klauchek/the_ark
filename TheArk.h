@@ -36,6 +36,12 @@ private:
     unsigned int current_year;
     std::array<Service*, 6> services;
     Population* population;
+public:
+    Population *getPopulation() const;
+
+    Resources *getResources() const;
+
+private:
     Resources* resources;
     std::istream *is;
     std::ostream *os;
