@@ -34,27 +34,27 @@ void Population::processYear() {
 
 unsigned int Population::borderChildrenToAdults()
 {
-    TheArk::get_instance()->getSocialService()->borderChildrenToAdults();
+    return TheArk::get_instance()->getSocialService()->borderChildrenToAdults();
 }
 
 unsigned int Population::borderAdultsToOldmen()
 {
-    TheArk::get_instance()->getMedicalService()->borderAdultsToOldmen();
+    return TheArk::get_instance()->getMedicalService()->borderAdultsToOldmen();
 }
 
 double Population::deathRateChildren()
 {
-    TheArk::get_instance()->getMedicalService()->deathRateChildren();
+    return TheArk::get_instance()->getMedicalService()->deathRateChildren();
 }
 
 double Population::deathRateAdults()
 {
-    TheArk::get_instance()->getMedicalService()->deathRateAdult();
+    return TheArk::get_instance()->getMedicalService()->deathRateAdult();
 }
 
 double Population::deathRateOldmen()
 {
-    TheArk::get_instance()->getMedicalService()->deathRateOldmen();
+    return TheArk::get_instance()->getMedicalService()->deathRateOldmen();
 }
 
 void Population::init(unsigned int total) {
